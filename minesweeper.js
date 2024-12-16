@@ -34,7 +34,6 @@ function setMines() {
 
 function startGame() {
     document.getElementById("mines-count").innerText = minesCount;
-    document.getElementById("timer").innerText = secondsElapsed;
     document.getElementById("flag-button").addEventListener("click", setFlag)
     setMines();
 
@@ -84,7 +83,6 @@ function clickTile() {
         alert("Game Over");
         gameOver = true;
         revealMines();
-        stopTimer();
         return;
     }
 
